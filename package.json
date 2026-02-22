@@ -1,0 +1,9 @@
+{
+  "name": "feishu-calendar-v1.0",
+  "version": "1.0.0",
+  "description": "Feishu Calendar Integration Skill v1.0",
+  "type": "module",
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.59.0"
+  }
+}
