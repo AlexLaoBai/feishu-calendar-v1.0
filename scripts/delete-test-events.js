@@ -6,8 +6,8 @@
 import * as Lark from "@larksuiteoapi/node-sdk";
 
 // 从环境变量或配置文件读取凭证
-const APP_ID = process.env.FEISHU_APP_ID || "cli_a9135c98af38dcda";
-const APP_SECRET = process.env.FEISHU_APP_SECRET || "CC5y5TVuVwkp0tENFcn5gdPBv37Ya6ic";
+const APP_ID = process.env.FEISHU_APP_ID || "";
+const APP_SECRET = process.env.FEISHU_APP_SECRET || "";
 
 // 创建飞书客户端
 const client = new Lark.Client({

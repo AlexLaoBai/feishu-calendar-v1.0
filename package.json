@@ -1,9 +1,27 @@
 {
   "name": "feishu-calendar-v1.0",
-  "version": "1.0.0",
-  "description": "Feishu Calendar Integration Skill v1.0",
+  "version": "1.1.0",
+  "description": "Feishu Calendar Integration Skill v1.1",
   "type": "module",
   "dependencies": {
-    "@larksuiteoapi/node-sdk": "^1.59.0"
-  }
+    "@larksuiteoapi/node-sdk": "^1.59.0",
+    "dayjs": "^1.11.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "test": "node scripts/test-user-calendar.js",
+    "check": "node scripts/check-events.js",
+    "time-parse": "node scripts/time-parser.js"
+  },
+  "keywords": [
+    "feishu",
+    "calendar",
+    "openclaw",
+    "skill"
+  ],
+  "author": "AlexLaoBai",
+  "license": "MIT"
 }

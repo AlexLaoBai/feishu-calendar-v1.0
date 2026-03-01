@@ -1,4 +1,4 @@
-# Feishu Calendar Skill v1.0
+# Feishu Calendar Skill v1.1
 
 飞书日历同步功能 - 支持在对话中输入日程安排，直接创建到用户的个人飞书日历。
 
@@ -45,7 +45,7 @@ await createUserEvent(summary, startTime, endTime, description);
 ## 📁 项目结构
 
 ```
-feishu-calendar-v1.0/
+feishu-calendar-v1.1/
 ├── .gitignore                      # Git 忽略文件
 ├── README.md                        # 项目说明文档
 ├── SKILL.md                         # OpenClaw Skill 文档
@@ -54,8 +54,12 @@ feishu-calendar-v1.0/
 │   ├── check-events.js            # 检查日程列表
 │   ├── create-event-simple.js     # 创建日程（应用日历）
 │   ├── create-user-event.js       # 在用户个人日历创建日程
+│   ├── delete-event.js            # 删除日程
 │   ├── delete-test-events.js      # 删除测试日程
-│   └── test-user-calendar.js      # 测试在用户个人日历创建日程
+│   ├── search-events.js           # 搜索日程
+│   ├── test-user-calendar.js      # 测试在用户个人日历创建日程
+│   ├── time-parser.js             # 时间解析器
+│   └── update-event.js            # 更新日程
 └── references/                     # 参考文档
     └── API.md                     # 飞书日历 API 参考文档
 ```
@@ -77,6 +81,18 @@ feishu-calendar-v1.0/
 ### `scripts/delete-test-events.js`
 删除测试日程。
 
+### `scripts/search-events.js`
+搜索日程。
+
+### `scripts/update-event.js`
+更新日程。
+
+### `scripts/delete-event.js`
+删除日程。
+
+### `scripts/time-parser.js`
+时间解析器，支持自然语言时间描述。
+
 ## 📋 权限列表
 
 ### 用户级权限
@@ -97,6 +113,15 @@ feishu-calendar-v1.0/
 - 不要将 `user-tokens.json` 提交到版本控制
 
 ## 📝 版本信息
+
+### v1.1.0 (2026-03-01)
+- ✅ 时间解析优化 - 添加自然语言时间解析功能
+- ✅ 搜索功能 - 添加日程搜索功能
+- ✅ 更新功能 - 添加日程更新功能
+- ✅ 删除功能 - 添加日程删除功能
+- ✅ 错误处理改进 - 优化错误信息和用户提示
+- ✅ 依赖管理 - 升级到 dayjs 时间库
+- ✅ 文档完善 - 更新版本信息和使用示例
 
 ### v1.0.0 (2026-02-22)
 - ✅ 初始版本发布
